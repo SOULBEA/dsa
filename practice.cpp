@@ -67,6 +67,6 @@ int main(){
   //print3(n);
   //print4(n);
   //print5(n);
-  print6(n);
+  print5(n);
   return 0;
 }
