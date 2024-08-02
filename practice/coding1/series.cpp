@@ -2,16 +2,19 @@
 using namespace std;
 
 int main(){
-  int n, a, d, i;
-  cout<<"please enter range: ";
-  cin>>n;
+  int n, a, d;
   cout<<"please enter first number: ";
   cin>>a;
-  cout<<"please enter common differnece: ";
+
+  cout<<"please enter common difference :";
   cin>>d;
-  i = 1;
+
+  cout<<"please enter range: ";
+  cin>>n;
+
+  int i =1;
   while(i<=n){
-    cout<<a+(i*d)<<endl;
+    cout<<a+i*d<<" ";
     i++;
   }
   return 0;

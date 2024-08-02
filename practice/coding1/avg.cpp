@@ -3,19 +3,15 @@ using namespace std;
 
 int main(){
   int n;
-  cout<<"please enter range: ";
   cin>>n;
+  int sum = 0; 
   int i = 1;
-  int sum =0;
+  int num;
   while(i<=n){
-    int num;
-    cout<<"enter your respective number: ";
     cin>>num;
     sum = sum+num;
     i++;
-
   }
-  
-  cout<<sum/n;
+  cout<<sum/n<<" ";
   return 0;
 }
