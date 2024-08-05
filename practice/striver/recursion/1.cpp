@@ -1,28 +1,19 @@
 #include<iostream>
 using namespace std;
-
-void printnum(int n){
-  cout<<n<<" ";
-  printnum(n);
-}
-
-
-void printnum2(int num, int n){
-  for(int i = 0; i<n; i++){
-    if(i ==n){
-      cout<<num<<" ";
-    }
+int count = 0;
+void print(){
+  if(count == 3){
+    return;
   }
-  printnum2(num, n);
+  cout<<count<<" "<<endl;
+  count++;
+  print();
 }
 
 int main(){
   int n;
   cout<<"please enter range: ";
   cin>>n;
-  int num;
-  cout<<"please enter number: ";
-  cin>>num;
-  printnum2(num, n);
+  print2(n);
   return 0;
 }
