@@ -13,8 +13,10 @@ int main(){
     n = n/10;
   }
   if(dup == rev){
-    cout<<"true";
+    cout<<"palindrom";
   }
-  else cout<<"false";
+  else{
+    cout<<"not palindrom";
+  }
   return 0;
 }
