@@ -1,32 +1,5 @@
-#include<iostream>
-using namespace std;
-
-void sort(int arr[], int n){
-  for(int i = 0;i<=n-2;i++){
-    int min = i;
-    for(int j = i; j<=n-1; j++){
-      if(arr[j]<arr[min]){
-        min = j;
-      }
-    }
-    int temp = arr[min];
-    arr[min] = arr[i];
-    arr[i] = temp;
-  }
-}
-
+#include <stdio.h>
 int main(){
-  int n;
-  cin>>n;
-  int arr[n];
-  cout<<"enter your following number: "<<endl;
-  for(int i = 0; i<n; i++){
-    cin>>arr[i];
-  }
-  sort(arr, n);
-  for(int i = 0; i<n;i++){
-    cout<<arr[i]<<" ";
-  }
+  printf("hello world");
   return 0;
 }
-  
