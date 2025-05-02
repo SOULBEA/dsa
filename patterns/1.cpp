@@ -2,8 +2,8 @@
 using namespace std;
 
 void pattern1(int n){
-  for(int i = 1; i<=n; i++){
-    for(int j = 1; j<=n; j++){
+  for(int i = 0; i<n; i++){
+    for(int j = 0; j<n; j++){
       cout<<"*";
     }
     cout<<endl;
@@ -11,8 +11,8 @@ void pattern1(int n){
 }
 
 void pattern2(int n){
-  for(int i = 1; i<=n; i++){
-    for(int j = 1; j<=i; j++){
+  for(int i = 0; i<n; i++){
+    for(int j = 0; j<i; j++){
       cout<<"*";
     }
     cout<<endl;
@@ -20,8 +20,8 @@ void pattern2(int n){
 }
 
 void pattern3(int n){
-  for(int i = 1; i<=n; i++){
-    for(int j = 1; j<=i; j++){
+  for(int i = 0; i<n; i++){
+    for(int j = 0; j<i; j++){
       cout<<j;
     }
     cout<<endl;
@@ -31,39 +31,39 @@ void pattern3(int n){
 void pattern4(int n){
   for(int i = 1; i<=n; i++){
     for(int j = 1; j<=i; j++){
-      cout<<i;
+      cout<<i<<" ";
     }
     cout<<endl;
   }
 }
 
 void pattern5(int n){
-  for(int i = 1; i<=n; i++){
-    for(int j = 1; j<=n-i+1; j++){
-      cout<<"*";
+  for(int i = 0; i<n; i++){
+    for(int j = i; j<n; j++){
+      cout<<"* ";
     }
     cout<<endl;
   }
 }
 
 void pattern6(int n){
-  for(int i = 1; i<=n; i++){
-    for(int j = 1; j<=n-i+1; j++){
-      cout<<j;
+  for(int i = 0; i<n; i++){
+    for(int j = n; j>i; j--){
+      cout<<n-j+1<<" ";
     }
     cout<<endl;
   }
 }
 
 void pattern7(int n){
-  for(int i = 1; i<n; i++){
-    for(int j = 1; j<=n-i-1; j++){
+  for(int i = 0; i<n; i++){
+    for(int j = 0; j<n-i+1; j++){
       cout<<" ";
     }
-    for(int j = 1; j<=2*i-1; j++){
-      cout<<"*";
+    for(int k = 0; k<2*i+1; k++){
+      cout<<"*"; 
     }
-    for(int j = 1; j<=n-i-1; j++){
+    for(int f = 0; f>n-i+1; f++){
       cout<<" ";
     }
     cout<<endl;
@@ -87,18 +87,8 @@ void pattern8(int n){
 
 int main(){
   int n;
-  cout<<"please enter a number: ";
+  cout<<"enter number: ";
   cin>>n;
-  //pattern1(n);
-  //pattern2(n);
-  //pattern3(n);
-  //pattern4(n);
-  //pattern5(n);
-  //pattern6(n);
-  //pattern7(n);
   pattern8(n);
-
-  cout<<"pattern : "<<c<<endl;
   return 0;
-
 }
