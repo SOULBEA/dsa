@@ -113,7 +113,7 @@ void pattern9(int n){
 void pattern10(int n){
   for(int i = 1; i<=2*n-1; i++){
     int stars = i;
-    if(i > n) stars = 2*n-1;
+    if(i > n) stars = 2*n - 1;
     for(int j = 1; j<=stars;j++){
       cout<<"*";
     }
@@ -121,10 +121,14 @@ void pattern10(int n){
   }
 }
 
+void pattern11(int n){
+
+}
+
 int main(){
   int n;
   cout<<"enter number: ";
   cin>>n;
-  pattern10(n);
+  pattern11(n);
   return 0;
 }
